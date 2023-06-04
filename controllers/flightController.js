@@ -29,7 +29,7 @@ module.exports.sourceTODes= async (req, res) => {
    
     const { source, destination } = req.body;
     try {
-        const flights = await Flight.find({ source, destination });
+        const flights = await Flight.find({ source, destination },{ _id: 0, flight: 1, price: 1 });
         res.json(flights);
       } catch (error) {
         console.error('Error retrieving flights:', error);
