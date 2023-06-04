@@ -8,7 +8,7 @@ module.exports.createFlights = async (req, res)=>{
         return res.send(newflight);
         
     } catch (error) {
-        return res.send("**ERR in create flight**" +error);
+        return res.send("**ERR in create flight***" +error);
     }
 }
 
