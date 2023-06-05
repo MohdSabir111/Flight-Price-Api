@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 module.exports.createFlights = async (req, res)=>{
     try {
-        const createFlight = await new Flight(req.body);
+        const createFlight = await Flight.create(req.body);
         const newflight = await createFlight.save();
         return res.send(newflight);
         
