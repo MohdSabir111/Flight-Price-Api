@@ -37,3 +37,15 @@ module.exports.sourceTODes= async (req, res) => {
       }
  
   };
+
+  module.exports.UpdateFlight= async(req, res)=>{
+    try {
+        const _id =req.params.id;                                    
+        const updateFlight = await Flight.findByIdAndUpdate({_id :_id } , req.body,{ 
+            new :true  // to show updated record in one hit
+        } )
+        return res.send(updateFlight);
+    } catch (error) {
+        return res.send(error)  
+    }
+};
