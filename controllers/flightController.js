@@ -4,8 +4,11 @@ const mongoose = require('mongoose');
 module.exports.createFlights = async (req, res)=>{
     try {
         const createFlight = await Flight.create(req.body);
+    const  newFlight = await createFlight.save({ maxTimeMS: 20000 }, (error, result) => {
+            // Handle the save operation completion or error here
+          });
      
-        return res.send(createFlight);
+        return res.send(newFlight);
         
     } catch (error) {
         return res.send("**ERR in create flight***" +error);
