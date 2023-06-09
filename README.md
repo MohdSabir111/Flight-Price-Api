@@ -9,22 +9,23 @@
        }
 
 ## Routes & URL
-- **https://flight-price-api-tlhv.onrender.com**
--      <p>Home</p>
+- **https://flight-price-api-tlhv.onrender.com** 
+   -<p> Home </p>
    
 
 - **https://flight-price-api-tlhv.onrender.com/flight**
-  -<p> To create a new Flight hit the URL in your Postman with <b>Post Request</b></p>
-
-  **we need to pass a urlEncoded form value "content" while requesting**
+  -<p> To create a new Flight hit the URL in your Postman with <b>Post Request</b></p> 
   
-
+  **we need to pass a urlEncoded form value "content" while requesting**  <br/> 
+ 
+ 
 - **https://flight-price-api-tlhv.onrender.com/flightall**
-  <p>To get all Flight hit the URL in your Postman with <b>Get Request</b></p>
+  <p>To get all Flight hit the URL in your Postman with <b>Get Request</b></p> <br/>
   
   
 - **https://flight-price-api-tlhv.onrender.com/flight**
--   <p>To get flight and price according to Source & Destination hit the URL in your Postman with <b>Get Request</b></p>
+-   <p>To get flight and price according to Source & Destination hit the URL in your Postman with <b>Get Request</b></p>  <br/>
+   
 
 - **https://flight-price-api-tlhv.onrender.com/flight/:id**
 -   <p>To UPTADE Flights data hit the URL in your Postman with <b>PATCH Request</b></p>
